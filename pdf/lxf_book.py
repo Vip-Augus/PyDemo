@@ -159,5 +159,5 @@ class JingQPythonCrawler(Crawler):
 
 if __name__ == '__main__':
     start_url = "https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000"
-    crawler = JingQPythonCrawler("廖雪峰Git", start_url)
+    crawler = JingQPythonCrawler("廖雪峰Python", start_url)
     crawler.run()
