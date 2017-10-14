@@ -22,7 +22,7 @@ def save_to_database(book_name, book_author, book_image, book_from, book_price, 
         conn.rollback()
         traceback.print_exc()
 
-def checkInsert(book_name):
+def check_insert(book_name):
     def checkInsert(book_name):
         sql = 'select book_id from c_book WHERE book_name = ' + '\'' + book_name + '\''
         try:
@@ -60,7 +60,7 @@ def get_detail(url):
             # 通过正则表达式查找出来的是数组类型,使用join整合到字符串
             book_price = float("".join(re.findall(r"\d+\.?\d*", msg_list[4])))
         # print(book_name, book_author, book_image, book_from, book_price, book_publisher, book_publish_date)
-        if(checkInsert(book_name) == None):
+        if(check_insert(book_name) == None):
             save_to_database(book_name, book_author, book_image, book_from, book_price, book_publisher,
                              book_publish_date)
 
