@@ -1,6 +1,8 @@
 import math
 import random
 import os
+import requests
+import urllib.request
 import copy
 
 
@@ -95,3 +97,6 @@ class Time:
 def avoids(word, forbidden):
     return not any(letter in forbidden for letter in word)
 
+response = urllib.request.urlopen('http://python.org/')
+html = response.read()
+print(html)

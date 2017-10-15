@@ -1,9 +1,9 @@
 
-# **豆瓣排名前250电影爬虫**
+# **豆瓣排名前250书籍爬虫**
 
 ## **个人系统**
 
-**window10/python3.5/mysql/BeautifulSoup4**
+**window10/python3.5/mysql/**
 
 ## **使用到的工具**
 
